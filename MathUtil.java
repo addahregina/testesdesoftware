@@ -4,9 +4,19 @@ public class MathUtil {
 
     // ... é chamado de varargs argumentos(parametros) variaveis
     public static int mdc(int ...valores){  //valores é um vetor
-        throw new UnsupportedOperationException(){
-            "Não implementado ainda";
+
+        int a = valores(0);
+        for(int i = 1; i< valores.lenght; i++){
+            final int b = valores[i];
+            a = mdc(a,b);
         }
+      
+        /* throw new UnsupportedOperationException(){
+            "Não implementado ainda";
+        } 
+        */
+        
+        return a
     }
     
     public static int mdc(int a, int b) {
