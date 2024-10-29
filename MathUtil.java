@@ -23,7 +23,7 @@ public class MathUtil {
             return Math.abs(a);
         }
 
-        //P8
+        //P8, P12
         if(a == b){
             return a;
         }
