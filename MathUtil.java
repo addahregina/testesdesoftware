@@ -2,6 +2,13 @@ package tdd;
 
 public class MathUtil {
 
+    // ... é chamado de varargs argumentos(parametros) variaveis
+    public static int mdc(int ...valores){  //valores é um vetor
+        throw new UnsupportedOperationException(){
+            "Não implementado ainda";
+        }
+    }
+    
     public static int mdc(int a, int b) {
 
         //P7
