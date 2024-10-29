@@ -76,5 +76,27 @@ class MathUtilTest {
         assertEquals(esperado, obtido);
     }
 
+    @Test
+    void mdcP4() {
+        final int m = 3, a = 2, b = 4;
+        final int esperado = MathUtil.mdc(m*a, m*b);
+        final int obtido = m * MathUtil.mdc(a, b);
+        assertEquals(esperado, obtido);
+    }
 
+    @Test
+    void mdcP12PrimosIguais(){
+        final int p=7, a = p;
+        final int esperado = p;
+        final int obtido = MathUtil.mdc(p, a);
+        assertEquals(esperado, obtido);
+    }
+
+    @Test
+    void mdcP12PrimosDiferentes(){
+        final int p=1, a = 3;
+        final int esperado = 1;
+        final int obtido = MathUtil.mdc(p, a);
+        assertEquals(esperado, obtido);
+    }
 }
