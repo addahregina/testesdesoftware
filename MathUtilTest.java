@@ -1,6 +1,7 @@
-package tdd;
-
+import org.example.MathUtil;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -9,6 +10,8 @@ import static org.junit.jupiter.api.Assertions.*;
 */
 
 class MathUtilTest {
+
+
 
     @Test
     void mdcP1Pares(){
@@ -31,6 +34,12 @@ class MathUtilTest {
         ///implementar
 
     }
+
+    @ParameterizedTest
+    @CsvSource({
+      "-5,0",
+      "5,0"
+    })
 
 
     @Test
@@ -107,12 +116,28 @@ class MathUtilTest {
         final int obtido = MathUtil.mdc(a, b, c);
         assertEquals(esperado, obtido);
     }
-    
+
     @Test
     void mdcTresValores(){
         final int a=30, b = 12, c = 6;
         final int esperado = 6;
         final int obtido = MathUtil.mdc(a, b, c);
         assertEquals(esperado, obtido);
+    }
+
+    @Test
+    void mdcNenhumValor(){
+
+        assertThrows(
+                ArrayIndexOutOfBoundsException.class,
+                MathUtil::mdc();
+        );
+        /*
+        try{
+            MathUtil.mdc();
+            //fail("Era esperado ua exceção, mas não ocorreu");
+        } catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Tudo certo");
+        } */
     }
 }
