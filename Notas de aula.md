@@ -32,3 +32,4 @@ Atividades Moodle
 
 
 Alt + Insert na classe, cria construtor
+Ctrl shift T cria classe de teste
