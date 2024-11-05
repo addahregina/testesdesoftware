@@ -1,4 +1,4 @@
-package tdd;
+package org.example;
 
 public class MathUtil {
 
@@ -6,10 +6,16 @@ public class MathUtil {
     public static int mdc(final int ...valores){  //valores é um vetor
 
         int a = valores[0];
+
+        for(int i :valores)
+
+        /*
         for(int i = 1; i< valores.length; i++){
             final int b = valores[i];
             a = mdc(a,b);
         }
+
+         */
 
         /* throw new UnsupportedOperationException(){
             "Não implementado ainda";
@@ -50,3 +56,4 @@ public class MathUtil {
     }
 
 }
+
