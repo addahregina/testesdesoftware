@@ -61,3 +61,6 @@ Alt + insert -> cria método de teste
 alt + insert -> getter and setter
 
 */
+
+shift f6 -> refatorar o codigo (renomear)
+Ctrl+P mostra os parâmetros de um método
