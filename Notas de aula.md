@@ -64,3 +64,6 @@ alt + insert -> getter and setter
 
 shift f6 -> refatorar o codigo (renomear)
 Ctrl+P mostra os parâmetros de um método
+
+Cobertura de código 
+Clica sobre o projeto -> Run all tests with coverage
